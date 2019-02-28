@@ -1,29 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
+
 <head>
-  <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona wizytówka">
+    <meta name="author" content="Tomasz Jurczyński">
+    <meta name="keywords" content="wizytówka, Tomek, Tomasz, Jurczyński">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title>Wizytówka</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link href="css/stylenav.css" rel="stylesheet" type="text/css">
+    <link href="css/stylecontent.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 
-    <div class="content">
+    <div class="wrapper">
         <nav class="nav-bar">
             <ul>
-                <li class="item">O mnie</li>
-                <li class="item">Siatkówka</li>
-                <li class="item">Coś jeszcze</li>
-                <li class="social"><a href="https://www.facebook.com/tomasz.jurczynski" target="_blank">
-                    <i class="fab fa-facebook-f"></i></a></li>
-                <li class="social"><a href="https://www.instagram.com/szalonytomek/" target="_blank">
-                    <i class="fab fa-instagram"></i></a></li>
+                <li><a href="#edukacja"><i class="fas fa-university"></i> Edukacja</a></li>
+                <li><a href="#"><i class="fas fa-volleyball-ball"></i> Siatkówka</a></li>
+                <li><a href="#"><i class="fab fa-creative-commons-sampling"></i> Zainteresowania</a></li>
+                <li><a href="#"><i class="fas fa-globe-americas"></i> Podróże</a></li>
+                <li class="social">
+                    <a href="https://www.facebook.com/tomasz.jurczynski" target="_blank">
+                        <i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social">
+                    <a href="https://www.instagram.com/szalonytomek/" target="_blank">
+                        <i class="fab fa-instagram"></i></a>
+                </li>
             </ul>
         </nav>
     </div>
-
-  <script src="js/scripts.js"></script>
+    <div id="edukacja" class="edukacja">
+        <h1>Edukacja</h1>
+        <p>Oczywiście opisane problemy nie będą miały również miejsca, gdy ustalimy szerokość bloku bezpośrednio w pikselach -
+        "width: 320px". Jednak w pewnych sytuacjach może zależeć nam, aby wymiary elementów na stronie były zależne od podanego
+        rozmiaru czcionki. Większa czcionka może wymagać szerszych bloków z tekstem. Używając jednostki rem wystarczy, że
+        zmienimy tylko rozmiar czcionki jednego elementu, nie obawiając się czasem trudnych do przewidzenia skutków
+        dziedziczenia stylów, a wymiary elementów strony automatycznie dopasują się do nowych ustawień, bez konieczności
+        ręcznych zmian w wielu miejscach arkusza CSS.</p>
+    </div>
 </body>
+
 </html>

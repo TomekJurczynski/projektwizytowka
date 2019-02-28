@@ -1,0 +1,28 @@
+.edukacja {
+    box-sizing: border-box;
+    width: 900px;
+    margin: 0 auto;
+    height: 40rem;
+    /* padding: 0 25%; */
+    border: 1px solid black;
+    background: url("../img/budynek.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.edukacja h1 {
+    padding: 20px 40px;
+    font-weight: bold;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#DB1A1A), to(#1A78DB));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.edukacja p {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
