@@ -1,9 +1,11 @@
 .skills {
     display: block;
-    width: 50%;
+    width: 60vw;
     margin: 0 auto;
     padding: 1%;
     background-color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
 .tytul h1 {
@@ -92,13 +94,19 @@ figure {
     margin: 0;
 }
 
+#edukacja {
+    text-align: center;
+}
+
 .edukacja {
+    position: relative;
     box-sizing: border-box;
-    width: 1100px;
+    width: 60vw;
+    height: 60vh;
     margin: 20px auto;
-    height: 40rem;
     /* padding: 0 25%; */
-    border: 1px solid black;
+    border: 2px solid grey;
+    border-radius: 5px;
     background: url("../img/budynek.jpg") center center no-repeat;
     background-size: cover;
 }
@@ -112,46 +120,112 @@ figure {
 }
 
 .edukacja p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid black;
-    margin: 20px;
-    padding: 10px;
-    font-size: 20px;
+    width: 60%;
+    height: 35%;
+    margin: 1vw;
+    padding: 1vw;
+    font-size: 1.2rem;
     color: white;
     font-style: italic;
     transition: all 0.5s ease-in;
+    overflow: auto;
 }
 
-.siatkowka {
-    box-sizing: border-box;
-    width: 1100px;
-    margin: 20px auto;
-    height: 40rem;
-    /* padding: 0 25%; */
-    border: 1px solid black;
+#volley {
+    text-align: center
+}
+
+.oborniki {
+    border: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    margin: 0 auto;
     background: url("../img/olimp.jpg") center center no-repeat;
     background-size: cover;
-    position: relative;
+    transition: all 1s ease-in;
 }
 
-.siatkowka h1 {
-    padding: 20px 40px;
-    font-weight: bold;
-    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#DB1A1A), to(#1A78DB));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    color: white;
-}
-
-.siatkowka p {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid black;
-    margin: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    font-style: italic;
-    transition: all 0.5s ease-in;
+.oborniki h2 {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.oborniki p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    opacity: 0;
+    width: 90%;
+    height: 20%;
+    overflow: auto;
+    transition: opacity 1.5s ease-in;
+}
+
+.oborniki:hover{
+    width: 60vw;
+    height: 60vh;
+}
+
+.oborniki:hover p{
+    opacity: 1;
+}
+
+.politechnika h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.politechnika {
+    border: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    margin: 0 auto;
+    background: url("../img/pwr.jpg") center center no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in;
+}
+
+.politechnika p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    opacity: 0;
+    width: 90%;
+    height: 28%;
+    overflow: auto;
+    transition: opacity 1.5s ease-in;
+}
+
+.politechnika:hover {
+    width: 60vw;
+    height: 60vh;
+}
+
+.politechnika:hover p {
+    opacity: 1;
 }
